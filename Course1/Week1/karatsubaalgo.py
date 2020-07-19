@@ -1,8 +1,8 @@
 def karatsuba(n1,n2):
-    n1Str = str(n1)
-    n2Str = str(n2)
     if (n1 < 10) or (n2 < 10):
         return n1*n2
+    n1Str = str(n1)
+    n2Str = str(n2)
     
     maxLen = max(len(n1Str), len(n2Str))
     splitPos = maxLen // 2
@@ -16,11 +16,4 @@ def karatsuba(n1,n2):
 
 n1=int(input("Enter 1st number"))
 n2=int(input("Enter 2nd number"))
-ans=karatsuba(n1,n2)
-
-
-ansf=8539734222673567065463550869546574495034888535765114961879601127067743044893204848617875072216249073013374895871952806582723184
-if(ans==ansf):
-    print("Yes")
-else:
-    print("No")
+print(karatsuba(n1,n2))
