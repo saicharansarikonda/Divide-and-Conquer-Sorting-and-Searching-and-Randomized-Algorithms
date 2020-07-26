@@ -1,6 +1,8 @@
 def karatsuba(n1,n2):
     if (n1 < 10) or (n2 < 10):
         return n1*n2
+    n1Str = str(n1)
+    n2Str = str(n2)
     
     n1Str = str(n1)
     n2Str = str(n2)    
@@ -15,4 +17,8 @@ def karatsuba(n1,n2):
 
 n1=int(input("Enter 1st number"))
 n2=int(input("Enter 2nd number"))
+<<<<<<< HEAD
 print(karatsuba(n1,n2))
+=======
+print(karatsuba(n1,n2))
+>>>>>>> 33885f018f69de6a482bc1389f45f2b874483227
